@@ -1,0 +1,330 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+#root{
+    min-height: 100vh;
+}
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.Appcont{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.NavBar{
+    background-color: Black;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+
+.NavBar img{
+    height: 100px;
+}
+
+.NavBarCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SearchBar{
+    background-color: white;
+    border-radius: 20px;
+    max-width: 400px;
+    margin-right: 4%; 
+    overflow: hidden;
+}
+.SearchBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* padding : 10px */
+}
+.searchinp{
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    padding : 8px;
+    align-items: center;
+    /* align-items: stretch; */
+}
+.searchinp input{
+    margin-left: 5px;
+    width: 100%;
+    border: none;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding :2px;
+    padding-left: 10px;
+}
+.searchinp input:focus{
+    border: none;
+    outline: none;
+    /* background-color: aqua; */
+}
+.searchbutt{
+    border-left: 1px solid black;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.searchbutt button{
+    padding: 0px;
+    margin: 0px;
+    background-color: inherit;
+    border: none;
+}
+
+.searchbutt button:hover .MuiSvgIcon-root{
+    color: rgb(165, 0, 33);
+    cursor: pointer;
+}
+
+.Feed{
+    height: 100%;
+    background-color: black;
+    flex-grow: 1;
+    display: flex;
+    /* overflow: hidden; */
+}
+
+
+
+.SideBar{
+    border-right: 1px solid #3d3d3d;
+    padding: 2px;
+    min-width: 300px;
+    max-height: 82vh;
+    position: sticky;
+    top: 120px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.SideBar p{
+    color: white;
+    text-align: center;
+}
+.SideBar button{
+    border: none;
+    width: 80%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-color: inherit;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.SideBar button:hover{
+    background-color: crimson;
+    /* color: #000; */
+    color: white;
+}
+
+.SideBar button .MuiSvgIcon-root {
+    color: inherit;
+    
+}
+
+.SideBar button:hover .MuiSvgIcon-root {
+    color: white;
+    
+}
+
+
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-height: 93%;
+    overflow-y: scroll;
+    /* position: absolute; */
+    /* width: 100%; */
+}
+.categories .MuiSvgIcon-root{
+    color: crimson;
+}
+.categories span{
+    margin: 10px;
+}
+.categories .name{
+    
+    font-size: 1.7em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+}
+.categories::-webkit-scrollbar{
+    width: 0.3vw;
+}
+.categories::-webkit-scrollbar-thumb{
+    background-color: #bbb9;
+}
+.categories::-webkit-scrollbar-track{
+    background-color: #000;
+}
+
+.HomePage{
+    flex-grow: 1;
+}
+
+.HomePage .title{
+    color: #fff;
+    font-size: 3em;
+    padding: 0;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.HomePage .title span{
+    color: crimson;
+}
+
+.Videos{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+.Video{
+    width: 320px;
+    height: 300px;
+    margin: 10px;
+    background-color: #222;
+    border: 1px solid #111;
+}
+.Video img{
+    clear: both;
+}
+.Video a{
+    text-decoration: none;
+}
+
+.VideoCard{
+    color: white;    
+    /* border: 2px solid white; */
+}
+.title_desc{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.VideoCard h5{
+    font-size: 1.1em;
+    margin: 0px;
+    padding: 0px;
+    /* color: orange; */
+}
+.VideoChannelName{
+    display: flex;
+    margin-top: 10px;
+}
+
+.VideoChannelName p{
+    margin-right: 5px;
+    color: #8d8d8d;
+    
+}
+.VideoChannelName .MuiSvgIcon-root{
+    color: #8d8d8d;
+    font-size: small;
+}
+
+.channelDet .MuiSvgIcon-root{
+    color: #8d8d8d;
+    font-size: small;
+}
+
+
+.VideoInfo{
+    display: flex;
+    align-items: center;
+}
+.VideoSec{
+    flex-grow: 1;
+}
+.suggestedVid{
+    height: 87vh;
+    overflow-y: auto;
+}
+.suggestedVid::-webkit-scrollbar{
+    width: 1vh;
+}
+.suggestedVid::-webkit-scrollbar-thumb{
+    background-color: #bbb9;
+}
+.suggestedVid::-webkit-scrollbar-track{
+    background-color: #000;
+}
+
+@media  (max-width : 500px){
+    .VideoInfo{
+        flex-direction: column;
+    }
+    .suggestedVid{
+        height: auto;
+        overflow-y:visible ;
+    }
+}
+
+/* .VideoCard */
+
+/* .categories .name{
+
+} */
+
+@media  (max-width : 700px) {
+    .Feed{
+        flex-direction: column;
+    }
+    .categories{
+        flex-direction: row;
+    }
+    
+    .SideBar{
+        border-right: none;
+        border-bottom: 1px solid #3d3d3d;
+        border-top: 1px solid #3d3d3d;
+        padding: 0px;
+        max-width: 100vw;
+    }
+
+    .SideBar button{
+        min-width: 180px;
+        margin-right: 10px;
+    }
+
+    .SideBar p{
+        display: none;
+    }
+
+    .categories{
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .categories::-webkit-scrollbar{
+        height: 0.5vh;
+    }
+    .categories::-webkit-scrollbar-thumb{
+        background-color: #bbb9;
+    }
+    .categories::-webkit-scrollbar-track{
+        background-color: #000;
+    }
+
+}
