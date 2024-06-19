@@ -6,11 +6,11 @@ import { useParams } from 'react-router-dom';
 const SearchResPage = () => {
     const [videosarr ,SetVideosarr] = useState([]);
     const {searchVal} = useParams(); 
-    useEffect(()=>{
-      FetchApi(`search?part=snippet&q=${searchVal}`)
-      .then((res)=>{
-        SetVideosarr(res.items)})
-  }, [])    
+    useEffect(() => {
+      FetchApi(`search?part=snippet&q=${searchVal}`).then((res) => {
+        SetVideosarr(res.items);
+      });
+    }, [searchVal]);    
   return (
     <div className='SearchResPage'
     style={{

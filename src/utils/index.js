@@ -25,10 +25,6 @@ export const categories = [
         icon : <HomeIcon />
     },
     {
-        name : 'JsMastery',
-        icon: <CodeIcon />
-    },
-    {
         name : 'Coding',
         icon: <CodeIcon />
     },

@@ -10,11 +10,9 @@ const ChannelInfo = () => {
   const [videos ,setVideos] = useState([]); 
   useEffect(()=>{
     const fetchRes = async ()=>{
-      const data = await FetchApi(`channels?part=snippet&id=${id}`);
-      console.log(data);
+      const data = await FetchApi(`channels?part=snippet&id=${id}`);;
       
       setChannelDetail(data.items[0]);
-      console.log(channelDetail);
       const data1 = await FetchApi(`search?channelId=${id}&part=snippet%2Cid&order=date`);
     
       setVideos(data1.items);
